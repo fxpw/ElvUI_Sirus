@@ -2,4 +2,8 @@
 [![Build Status](https://github.com/Bunny67/ElvUI_Sirus/workflows/CI/badge.svg)](https://github.com/Bunny67/ElvUI_Sirus/actions?workflow=CI)
 [![Discord](https://discordapp.com/api/guilds/259362419372064778/widget.png?style=shield)](https://discord.gg/UXSc7nt)
 
+
+По всем вопросам в fxpw#9990
+
+
 # Only for custom server
