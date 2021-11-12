@@ -3,7 +3,7 @@
 [![Discord](https://discordapp.com/api/guilds/259362419372064778/widget.png?style=shield)](https://discord.gg/UXSc7nt)
 
 
-По всем вопросам в fxpw#9990
+По всем вопросам в Discord fxpw#9990
 
 
 # Only for custom server
