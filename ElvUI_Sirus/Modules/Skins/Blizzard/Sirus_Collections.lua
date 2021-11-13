@@ -127,7 +127,7 @@ local function LoadSkin()
 			highlight:SetTexCoord(0, 1, 0, 1)
 			highlight:SetVertexColor(1, 1, 1, .35)
 			highlight:SetAllPoints()
-			print(highlight)
+			-- print(highlight)
 			button.Background:SetTexture()
 
 			button.Icon:SetDrawLayer("BORDER")
