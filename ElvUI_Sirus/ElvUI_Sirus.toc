@@ -1,8 +1,9 @@
 ﻿## Interface: 30300
-## Author: Bunny
-## Version: 1.18
+## Author: Bunny, fxpw
+## Version: 1.21
 ## Title: |cff1784d1E|r|cffe5e3e3lvUI|r |cff1784d1S|r|cffe5e3e3irus|r
 ## Notes: User Interface replacement AddOn for World of Warcraft.
+## Notes-ruRU: Дополнение для ELVUI для сервера Sirus.
 ## SavedVariables: ElvSirusDB
 ## RequiredDeps: ElvUI
 ## OptionalDeps: ElvUI_Enhanced, ElvUI_AddOnSkins, ElvUI_VisualProcs
@@ -13,6 +14,7 @@ Fonts.lua
 Tags.lua
 Case.lua
 OptionsUI.lua
+Versioncheck.lua
 Settings\Load_Config.xml
 Modules\Load_Modules.xml
 Plugins\Load_Plugins.xml

@@ -314,3 +314,5 @@ if EE then
 	EB.DressUpFrame = E.noop
 	EB.DeathRecap = E.noop
 end
+
+
