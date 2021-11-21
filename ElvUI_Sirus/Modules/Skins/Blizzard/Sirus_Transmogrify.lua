@@ -52,10 +52,33 @@ local function LoadSkin()
 
 
 		-- transmog tab
-
+		local WardrobeFrame = _G.WardrobeFrame
 		WardrobeFrame:StripTextures()
-		WardrobeFrame:CreateBackdrop("Transperent")
-		S:HandleCloseButton(WardrobeFrameCloseButton)
+		WardrobeFrame:SetTemplate('Transparent')
+		
+		---- save set frame
+
+			local WardrobeOutfitFrame = _G.WardrobeOutfitFrame
+				WardrobeOutfitFrame:StripTextures()
+				WardrobeOutfitFrameBorder:StripTextures()
+				WardrobeOutfitFrame:SetTemplate('Transparent')
+				
+				S:HandleButton(_G.WardrobeOutfitDropDown.SaveButton)
+				S:HandleDropDownBox(_G.WardrobeOutfitDropDown, 221)
+				_G.WardrobeOutfitDropDown:Height(34)
+				_G.WardrobeOutfitDropDown.SaveButton:ClearAllPoints()
+				_G.WardrobeOutfitDropDown.SaveButton:Point('TOPLEFT', _G.WardrobeOutfitDropDown, 'TOPRIGHT', -2, -2)
+
+			-- local WardrobeOutfitEditFrame = _G.WardrobeOutfitEditFrame
+				WardrobeOutfitEditFrame:StripTextures()
+				WardrobeOutfitEditFrame:SetTemplate('Transparent')
+				WardrobeOutfitEditFrameBorder:StripTextures()
+				WardrobeOutfitEditFrame.EditBox:StripTextures()
+				S:HandleEditBox(WardrobeOutfitEditFrame.EditBox)
+				S:HandleButton(WardrobeOutfitEditFrame.AcceptButton)
+				S:HandleButton(WardrobeOutfitEditFrame.CancelButton)
+				S:HandleButton(WardrobeOutfitEditFrame.DeleteButton)
+				
 
 		WardrobeTransmogFrame:StripTextures()
 		-- WardrobeTransmogFrame:CreateBackdrop("Transperent")
@@ -66,6 +89,7 @@ local function LoadSkin()
 			WardrobeCollectionFrameFilterButton:StripTextures()
 			WardrobeCollectionFrameFilterButton:CreateBackdrop()
 			S:HandleButton(WardrobeTransmogFrame.ModelFrame.ClearAllPendingButton)
+			
 			-- WardrobeTransmogFrame.ModelFrame.ClearAllPendingButton:StripTextures()
 			-- WardrobeTransmogFrame.ModelFrame.ClearAllPendingButton:CreateBackdrop()
 			-- local iconrefresh = AuctionHouseFrameCommoditiesBuyFrameItemListRefreshFrameRefreshButtonIcon:GetTexture();
@@ -90,6 +114,7 @@ local function LoadSkin()
 		S:HandleNextPrevButton(WardrobeCollectionFrameItemsCollectionFramePagingFrameNextPageButton, nil, nil, true)
 
 		S:HandleDropDownBox(WardrobeCollectionFrameItemsCollectionFrameWeaponDropDown)
+		
 		S:HandleTab(WardrobeCollectionFrameTab1)
 		WardrobeCollectionFrameTab1:StripTextures()
 		S:HandleEditBox(WardrobeCollectionFrameSearchBox)
@@ -98,6 +123,10 @@ local function LoadSkin()
 		WardrobeCollectionFrameItemsCollectionFrameOverlayFrame:StripTextures()
 		WardrobeCollectionFrameItemsCollectionFrameOverlayFrame:CreateBackdrop("Transperent")
 		WardrobeCollectionFrameItemsCollectionFrame:StripTextures()
+
+
+		
+
 
 
 		local sbcR, sbcG, sbcB = 4/255, 179/255, 30/255
