@@ -55,6 +55,8 @@ local function LoadSkin()
 		local WardrobeFrame = _G.WardrobeFrame
 		WardrobeFrame:StripTextures()
 		WardrobeFrame:SetTemplate('Transparent')
+
+		S:HandleCloseButton(WardrobeFrameCloseButton)
 		
 		---- save set frame
 
