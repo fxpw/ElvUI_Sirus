@@ -26,6 +26,24 @@ local function LoadSkin()
 	for i = 1, 4 do
 		S:HandleTab(_G["LFDParentFrameTab"..i])
 	end
+	local tabstorem ={
+		"LFDParentFrameTab",
+		"PVPUIFrameTab",
+		"PVPLadderFrameTab",
+		"RenegadeLadderFrameTab",
+	}
+	for i = 1,4 do 
+		for _,tab in pairs(tabstorem) do
+		tab = _G[tab..1]
+			if tab then
+				tab:ClearAllPoints()
+				tab:SetPoint("BOTTOMLEFT", 2, -30)
+			end
+		end
+	end
+	
+	-- LFDParentFrameTab1:ClearAllPoints()
+	-- LFDParentFrameTab1:SetPoint("BOTTOMLEFT", 2, -30)
 
 	LFDParentFrameGroupButton1.ring:Kill()
 	LFDParentFrameGroupButton1.bg:Kill()
@@ -60,6 +78,9 @@ local function LoadSkin()
 
 	LFDQueueFrameRandomScrollFrame:StripTextures()
 	S:HandleScrollBar(LFDQueueFrameRandomScrollFrameScrollBar)
+	LFDQueueFrameRandomScrollFrameScrollBar:ClearAllPoints()
+	LFDQueueFrameRandomScrollFrameScrollBar:SetPoint("TOPLEFT", LFDQueueFrameRandomScrollFrame, "TOPRIGHT", 5, -15)
+	LFDQueueFrameRandomScrollFrameScrollBar:SetPoint("BOTTOMLEFT", LFDQueueFrameRandomScrollFrame, "BOTTOMRIGHT", 5, 0)
 
 	local function SkinLFDRandomDungeonLoot(frame)
 		if frame.isSkinned then return end
