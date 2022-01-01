@@ -398,6 +398,15 @@ local function LoadSkin()
 
 	S:HandleButton(StoreDressUPFrame.CloseButton, true)
 	S:HandleButton(StoreDressUPFrame.ResetButton, true)
+	S:HandleButton(StoreFrameLeftInsetInviteFriendButton, true)
+	S:HandleButton(StoreFrameLeftInsetReferDetailsButton, true)
+	StoreReferDetailsFrame:HookScript("OnShow", function()
+		S:HandleButton(StoreReferDetailsFrameBanner1InviteFriendButton, true)
+		S:HandleCloseButton()
+
+
+	end)
+
 
 	-- StoreTransmogrifyFrame
 	S:HandleEditBox(StoreTransmogrifyFrame.LeftContainer.searchBox)
@@ -526,6 +535,16 @@ local function LoadSkin()
 			end
 		end
 	end)
+
+	PromoCodeFrame:HookScript("OnShow",function()
+		PromoCodeFrame:StripTextures()
+		PromoCodeFrame:CreateBackdrop("Transparent")
+		S:HandleButton(PromoCodeFrameActionButton)
+		S:HandleEditBox(PromoCodeFrameContainerPromoCodeEditBoxFrame)
+		PromoCodeFrameHeaderFrame.description:SetTextColor(1, 1, 1)
+
+	end)
+
 end
 
 S:AddCallback("Sirus_Store", LoadSkin)

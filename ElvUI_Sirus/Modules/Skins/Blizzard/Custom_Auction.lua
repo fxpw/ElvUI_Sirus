@@ -24,21 +24,21 @@ local function LoadSkin()
 					AuctionHouseFrameBrowseResultsFrameItemListScrollFrame:StripTextures()
 					AuctionHouseFrameBrowseResultsFrameItemListScrollFrame:CreateBackdrop("Transparent")
 
-				--buy tab 
+				--buy tab
 					AuctionHouseFrameBrowseResultsFrameItemList:StripTextures()
 					AuctionHouseFrameBrowseResultsFrameItemListNineSlice:StripTextures()
 				--money
-					AuctionHouseFrameMoneyFrame:StripTextures()	
+					AuctionHouseFrameMoneyFrame:StripTextures()
 					--AuctionHouseFrameMoneyFrame:CreateBackdrop("Transparent")
-					AuctionHouseFrameMoneyFrameBorder:StripTextures()	
-					AuctionHouseFrameMoneyFrameBorderMoneyFrame:StripTextures()	
+					AuctionHouseFrameMoneyFrameBorder:StripTextures()
+					AuctionHouseFrameMoneyFrameBorderMoneyFrame:StripTextures()
 				--category
-					AuctionHouseFrameCategoriesListNineSlice:StripTextures()	
-					AuctionHouseFrameCategoriesList:StripTextures()	
-					--AuctionHouseFrameCategoriesListScrollFrameScrollChildFrame:StripTextures()	
+					AuctionHouseFrameCategoriesListNineSlice:StripTextures()
+					AuctionHouseFrameCategoriesList:StripTextures()
+					--AuctionHouseFrameCategoriesListScrollFrameScrollChildFrame:StripTextures()
 					--AuctionHouseFrameCategoriesListScrollFrameScrollChildFrame:CreateBackdrop("Transparent")
 					AuctionHouseFrameCategoriesListScrollFrame:StripTextures()
-				--results					
+				--results
 					AuctionHouseFrameItemBuyFrameItemListScrollFrame:StripTextures()
 					AuctionHouseFrameItemBuyFrameItemListScrollFrame:CreateBackdrop("Transparent")
 					AuctionHouseFrameItemBuyFrameItemList:StripTextures()
@@ -49,7 +49,7 @@ local function LoadSkin()
 							AuctionHouseFrameItemBuyFrameItemListNineSlice:CreateBackdrop("Transparent")
 							S:HandleEditBox(AuctionHouseFrameItemBuyFrameBidFrameBidAmountGold)
 							S:HandleEditBox(AuctionHouseFrameItemBuyFrameBidFrameBidAmountSilver)
-							aucfpanelbidbut1_OnShow(self) 
+							aucfpanelbidbut1_OnShow(self)
 
 					end
 					local aucpanitemlistnineslice = AuctionHouseFrameItemBuyFrameItemListHeaderContainer
@@ -69,7 +69,7 @@ local function LoadSkin()
 						AuctionHouseFrameCommoditiesBuyFrameItemListScrollFrameScrollBar:ClearAllPoints()
 						AuctionHouseFrameCommoditiesBuyFrameItemListScrollFrameScrollBar:SetPoint("TOPLEFT", AuctionHouseFrameCommoditiesBuyFrameItemListScrollFrame, "TOPRIGHT", 6, -15)
 						AuctionHouseFrameCommoditiesBuyFrameItemListScrollFrameScrollBar:Height(355)
-						
+
 					--frame
 						AuctionHouseFrameCommoditiesBuyFrameBuyDisplay:StripTextures()
 						AuctionHouseFrameCommoditiesBuyFrameBuyDisplay:CreateBackdrop("Transparent")
@@ -91,10 +91,10 @@ local function LoadSkin()
 						AuctionHouseFrameCommoditiesBuyFrameBuyDisplayNineSlice:CreateBackdrop("Transparent")
 
 						S:HandleEditBox(AuctionHouseFrameCommoditiesBuyFrameBuyDisplayQuantityInputInputBox)
-						
-						
+
+
 			--scrollbar
-				AuctionHouseFrameCategoriesListScrollFrameScrollBar:StripTextures()	
+				AuctionHouseFrameCategoriesListScrollFrameScrollBar:StripTextures()
 				S:HandleScrollBar(AuctionHouseFrameBrowseResultsFrameItemListScrollFrameScrollBar)
 				AuctionHouseFrameBrowseResultsFrameItemListScrollFrameScrollBar:ClearAllPoints()
 				AuctionHouseFrameBrowseResultsFrameItemListScrollFrameScrollBar:SetPoint("TOPLEFT", AuctionHouseFrameBrowseResultsFrameItemListScrollFrame, "TOPRIGHT", 6, -20)
@@ -115,8 +115,8 @@ local function LoadSkin()
 				S:HandleCloseButton(AuctionHouseFrameCloseButton)
 				S:HandleButton(AuctionHouseFrameSearchBarFavoritesSearchButton)
 				-- 1
-				
-				S:HandleButton(AuctionHouseFrameItemBuyFrameBackButton)				
+
+				S:HandleButton(AuctionHouseFrameItemBuyFrameBackButton)
 				S:HandleButton(AuctionHouseFrameItemBuyFrameBuyoutFrameBuyoutButton)
 				S:HandleButton(AuctionHouseFrameItemBuyFrameBidFrameBidButton)
 				S:HandleButton(AuctionHouseFrameItemBuyFrameItemListRefreshFrameRefreshButton)
@@ -125,10 +125,10 @@ local function LoadSkin()
 				AuctionHouseFrameSearchBarSearchBox:StripTextures(true)
 				S:HandleEditBox(AuctionHouseFrameSearchBarSearchBox)
 				-- edit box
-					
+
 --					AuctionHouseFrameItemBuyFrameBidFraameBidAmountGold:Width(70)
 --					AuctionHouseFrameItemBuyFrameBidFraameBidAmountGold:Height(20)
-			
+
 		--sell tab
 			--frames
 				--right side
@@ -143,17 +143,18 @@ local function LoadSkin()
 					AuctionHouseFrameCommoditiesSellList:StripTextures()
 					AuctionHouseFrameCommoditiesSellListNineSlice:StripTextures()
 				--leftside
-					--1st			
+					--1st
 						AuctionHouseFrameItemSellFrameOverlay:StripTextures()
 						AuctionHouseFrameItemSellFrame:StripTextures()
 						AuctionHouseFrameItemSellFrame:CreateBackdrop("Transparent")
 						AuctionHouseFrameItemSellFrameNineSlice:StripTextures()
 							--topleft
 								AuctionHouseFrameItemSellFrameItemDisplay:StripTextures()
-								AuctionHouseFrameItemSellFrameItemDisplay:CreateBackdrop("Transparent")
-							--button								
+								-- AuctionHouseFrameItemSellFrameItemDisplay:CreateBackdrop("Transparent")
+							--button
 								S:HandleButton(AuctionHouseFrameItemSellFrameItemDisplayItemButton)
 								-- S:HandleIcon(AuctionHouseFrameItemSellFrameItemDisplayItemButtonIcon)
+								-- S:HandleIcon(AuctionHouseFrameItemSellFrameItemDisplayItemButton.Icon)
 					--2nd
 						AuctionHouseFrameCommoditiesSellFrameOverlay:StripTextures()
 						AuctionHouseFrameCommoditiesSellFrame:StripTextures()
@@ -162,17 +163,21 @@ local function LoadSkin()
 							--topleft
 								AuctionHouseFrameCommoditiesSellFrameItemDisplay:StripTextures()
 								AuctionHouseFrameCommoditiesSellFrameItemDisplay:CreateBackdrop("Transparent")
-							--button								
-								S:HandleButton(AuctionHouseFrameCommoditiesSellFrameItemDisplayItemButton)
+							--button
+								-- S:HandleButton(AuctionHouseFrameCommoditiesSellFrameItemDisplayItemButton)
+								AuctionHouseFrameCommoditiesSellFrameItemDisplayItemButtonIconBorder:StripTextures()
+								AuctionHouseFrameCommoditiesSellFrameItemDisplayItemButtonEmptyBackground:StripTextures()
+								-- AuctionHouseFrameCommoditiesSellFrameItemDisplayItemButtonIcon:SetDrawLayer("BORDER")
+								S:HandleIcon(AuctionHouseFrameCommoditiesSellFrameItemDisplayItemButton.Icon)
 			--scrollbar
 				--1st
-					S:HandleScrollBar(AuctionHouseFrameItemSellListScrollFrameScrollBar)				
+					S:HandleScrollBar(AuctionHouseFrameItemSellListScrollFrameScrollBar)
 					AuctionHouseFrameItemSellListScrollFrameScrollBar:ClearAllPoints()
 					AuctionHouseFrameItemSellListScrollFrameScrollBar:SetPoint("TOPLEFT", AuctionHouseFrameItemSellListScrollFrame, "TOPRIGHT", 4, -20)
 					AuctionHouseFrameItemSellListScrollFrameScrollBar:Height(370)
 
 				--2nd
-					S:HandleScrollBar(AuctionHouseFrameCommoditiesSellListScrollFrameScrollBar)						
+					S:HandleScrollBar(AuctionHouseFrameCommoditiesSellListScrollFrameScrollBar)
 					-- AuctionHouseFrameCommoditiesSellListScrollFrameScrollBar:ClearAllPoints()
 					-- AuctionHouseFrameCommoditiesSellListScrollFrameScrollBar:SetPoint("TOPLEFT", AuctionHouseFrameCommoditiesSellListScrollFrame, "TOPRIGHT", 4, -20)
 					-- AuctionHouseFrameCommoditiesSellListScrollFrameScrollBar:Height(370)
@@ -197,6 +202,8 @@ local function LoadSkin()
 				AuctionHouseFrameCommoditiesSellFrameDurationDropDownDropDownButton:Size(20)
 			--check
 				S:HandleCheckBox(AuctionHouseFrameItemSellFrameBuyoutModeCheckButton)
+				AuctionHouseFrameItemSellFrameBuyoutModeCheckButton:Height(24)
+				AuctionHouseFrameItemSellFrameBuyoutModeCheckButton:Width(24)
 			--editbox
 				--1st
 					S:HandleEditBox(AuctionHouseFrameItemSellFrameQuantityInputInputBox)
@@ -222,7 +229,7 @@ local function LoadSkin()
 					AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameGoldBox:Width(85)
 					AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameGoldBox:Height(25)
 
-					S:HandleEditBox(AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameSilverBox)	
+					S:HandleEditBox(AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameSilverBox)
 					AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameSilverBox:ClearAllPoints()
 					AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameSilverBox:SetPoint("TOPLEFT", AuctionHouseFrameItemSellFrameSecondaryPriceInput, "TOPRIGHT", -100, 0)
 					AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameSilverBox:Width(60)
@@ -232,7 +239,7 @@ local function LoadSkin()
 					AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameSilverBoxIcon:SetPoint("TOPLEFT", AuctionHouseFrameItemSellFrameSecondaryPriceInputMoneyInputFrameSilverBox, "TOPRIGHT", -30, -4)
 
 
-					
+
 				--2nd
 					S:HandleEditBox(AuctionHouseFrameCommoditiesSellFrameQuantityInputInputBox)
 					AuctionHouseFrameCommoditiesSellFrameQuantityInputInputBox:Width(70)
@@ -244,7 +251,7 @@ local function LoadSkin()
 					AuctionHouseFrameCommoditiesSellFramePriceInputMoneyInputFrameSilverBox:Width(70)
 					AuctionHouseFrameCommoditiesSellFramePriceInputMoneyInputFrameSilverBox:Height(20)
 		--lot tab
-			--tabs	
+			--tabs
 				S:HandleTab(AuctionHouseFrameAuctionsFrameAuctionsTab)
 				S:HandleTab(AuctionHouseFrameAuctionsFrameBidsTab)
 					--lots
@@ -263,7 +270,7 @@ local function LoadSkin()
 						--Button
 							S:HandleButton(AuctionHouseFrameAuctionsFrameCancelAuctionButton)
 							S:HandleButton(AuctionHouseFrameAuctionsFrameAllAuctionsListRefreshFrameRefreshButton)
-							
+
 						--frames
 							--left
 								AuctionHouseFrameAuctionsFrameSummaryListScrollFrameArtOverlay:StripTextures()
@@ -300,9 +307,9 @@ local function LoadSkin()
 						AuctionHouseFrameAuctionsFrameCommoditiesListScrollFrame:StripTextures()
 						AuctionHouseFrameAuctionsFrameCommoditiesListScrollFrame:CreateBackdrop("Transparent")
 
-						function commfktab_onshow(self)						
+						function commfktab_onshow(self)
 							if AuctionHouseFrameAuctionsFrameCommoditiesListScrollFrame ~= nil then
-								AuctionHouseFrameAuctionsFrameCommoditiesListScrollFrame:SetScript("OnUpdate", function() 
+								AuctionHouseFrameAuctionsFrameCommoditiesListScrollFrame:SetScript("OnUpdate", function()
 
 									AuctionHouseFrameAuctionsFrameCommoditiesListNineSlice:StripTextures()
 									AuctionHouseFrameAuctionsFrameCommoditiesList:StripTextures()
@@ -316,29 +323,29 @@ local function LoadSkin()
 									AuctionHouseFrameAuctionsFrameCommoditiesListScrollFrameScrollBar:SetPoint("TOPLEFT", AuctionHouseFrameAuctionsFrameCommoditiesListScrollFrame, "TOPRIGHT", 4, -20)
 									AuctionHouseFrameAuctionsFrameCommoditiesListScrollFrameScrollBar:Height(270)
 
-					--buttons		
-									if AuctionHouseFrameAuctionsFrameCommoditiesListRefreshFrameRefreshButton ~= nil then 
+					--buttons
+									if AuctionHouseFrameAuctionsFrameCommoditiesListRefreshFrameRefreshButton ~= nil then
 											AuctionHouseFrameAuctionsFrameCommoditiesListRefreshFrameRefreshButton:SetScript("OnUpdate", function()
 												S:HandleButton(AuctionHouseFrameAuctionsFrameCommoditiesListRefreshFrameRefreshButton)
-											end)										
+											end)
 										end
 									if AuctionHouseFrameAuctionsFrameCommoditiesListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1 ~= nil then
 											AuctionHouseFrameAuctionsFrameCommoditiesListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1:SetScript("OnUpdate", function()
 												S:HandleButton(AuctionHouseFrameAuctionsFrameCommoditiesListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1)
 											end)
-									end							
+									end
 								end)
 							end
 						end
 						AuctionHouseFrameAuctionsFrameCommoditiesList:HookScript("OnUpdate", commfktab_onshow)
-					
+
 				--itemlist3tab
 					AuctionHouseFrameAuctionsFrameItemListScrollFrame:StripTextures()
 					AuctionHouseFrameAuctionsFrameItemListScrollFrame:CreateBackdrop("Transparent")
 
-					function itemfktab_onshow(self)						
+					function itemfktab_onshow(self)
 						if AuctionHouseFrameAuctionsFrameItemListScrollFrame ~= nil then
-							AuctionHouseFrameAuctionsFrameItemListScrollFrame:SetScript("OnUpdate", function() 
+							AuctionHouseFrameAuctionsFrameItemListScrollFrame:SetScript("OnUpdate", function()
 
 									AuctionHouseFrameAuctionsFrameItemListNineSlice:StripTextures()
 									AuctionHouseFrameAuctionsFrameItemList:StripTextures()
@@ -352,18 +359,18 @@ local function LoadSkin()
 									AuctionHouseFrameAuctionsFrameItemListScrollFrameScrollBar:SetPoint("TOPLEFT", AuctionHouseFrameAuctionsFrameItemListScrollFrame, "TOPRIGHT", 4, -20)
 									AuctionHouseFrameAuctionsFrameItemListScrollFrameScrollBar:Height(270)
 
-								--buttons										
-										if AuctionHouseFrameAuctionsFrameItemListRefreshFrameRefreshButton ~= nil then 
+								--buttons
+										if AuctionHouseFrameAuctionsFrameItemListRefreshFrameRefreshButton ~= nil then
 											AuctionHouseFrameAuctionsFrameItemListRefreshFrameRefreshButton:SetScript("OnUpdate", function()
 												S:HandleButton(AuctionHouseFrameAuctionsFrameItemListRefreshFrameRefreshButton)
 																			end)
-										
+
 										end
 										if AuctionHouseFrameAuctionsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1 ~= nil then
 											AuctionHouseFrameAuctionsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1:SetScript("OnUpdate", function()
 												S:HandleButton(AuctionHouseFrameAuctionsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1)
 																			end)
-										end 	
+										end
 										if AuctionHouseFrameAuctionsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate2 ~= nil then
 											AuctionHouseFrameAuctionsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate2:SetScript("OnUpdate", function()
 												S:HandleButton(AuctionHouseFrameAuctionsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate2)
@@ -373,23 +380,23 @@ local function LoadSkin()
 											AuctionHouseFrameAuctionsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3:SetScript("OnUpdate", function()
 												S:HandleButton(AuctionHouseFrameAuctionsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3)
 																			end)
-										end  								
-							
+										end
+
 							end)
 						end
 
 					end
 					AuctionHouseFrameAuctionsFrameItemList:HookScript("OnUpdate", itemfktab_onshow)
 
-		--category buttons (не придумал как сделать по другому пока, он показывает только 20 кнопок на экране максимум и если гортаешь они обновляются) 				
+		--category buttons (не придумал как сделать по другому пока, он показывает только 20 кнопок на экране максимум и если гортаешь они обновляются)
 		function buttonsleft_OnShow(self)
 				for i = 1,20 do
 					-- if _G["AuctionHouseFrameCategoriesListAuctionFilterButton"..i] ~= nil then
-						(_G["AuctionHouseFrameCategoriesListAuctionFilterButton"..i.."NormalTexture"]):StripTextures();						
+						(_G["AuctionHouseFrameCategoriesListAuctionFilterButton"..i.."NormalTexture"]):StripTextures();
 						S:HandleButton(_G["AuctionHouseFrameCategoriesListAuctionFilterButton"..i]);
 						-- (_G["AuctionHouseFrameCategoriesListAuctionFilterButton"..i.."Lines"]):StripTextures();
-						-- (_G["AuctionHouseFrameCategoriesListAuctionFilterButton"..i.."HighlightTexture"]):StripTextures();								
-					-- end					
+						-- (_G["AuctionHouseFrameCategoriesListAuctionFilterButton"..i.."HighlightTexture"]):StripTextures();
+					-- end
 				end
 			end
 			AuctionHouseFrameCategoriesList:HookScript("OnUpdate", buttonsleft_OnShow)
@@ -397,8 +404,8 @@ local function LoadSkin()
 
 		function secftab_OnShow(self)
 			for i = 1,2 do
-				S:HandleButton(_G["AuctionHouseFrameItemSellListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])		
-			end	
+				S:HandleButton(_G["AuctionHouseFrameItemSellListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])
+			end
 			if AuctionHouseFrameItemSellListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3 ~= nil then
 				AuctionHouseFrameItemSellListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3:SetScript("OnUpdate", function()
 					S:HandleButton(AuctionHouseFrameItemSellListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3)
@@ -408,32 +415,32 @@ local function LoadSkin()
 
 		function secstab_OnShow(self)
 			for i = 1,2 do
-				S:HandleButton(_G["AuctionHouseFrameCommoditiesSellListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])		
-			end	
+				S:HandleButton(_G["AuctionHouseFrameCommoditiesSellListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])
+			end
 		end
 
 		function thtab_OnShow(self)
 			for i = 1,4 do
-				S:HandleButton(_G["AuctionHouseFrameAuctionsFrameAllAuctionsListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])		
-			end	
+				S:HandleButton(_G["AuctionHouseFrameAuctionsFrameAllAuctionsListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])
+			end
 		end
 
 		function fortab_OnShow(self)
 			for i = 1,3 do
-				S:HandleButton(_G["AuctionHouseFrameAuctionsFrameBidsListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])		
-			end	
+				S:HandleButton(_G["AuctionHouseFrameAuctionsFrameBidsListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])
+			end
 		end
 		function aucfpanelbidbut1_OnShow(self)
 			for i = 1,2 do
-				S:HandleButton(_G["AuctionHouseFrameItemBuyFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])		
+				S:HandleButton(_G["AuctionHouseFrameItemBuyFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])
 			end
 			--[[ for i = 3,4 do
-				S:HandleButton(_G["AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])		
+				S:HandleButton(_G["AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate"..i])
 			end	 ]]
 		end
 
 		--[[ 	aucfpanel1 = AuctionHouseFrame
-				aucfpanel1:HookScript("OnShow", firtab_OnShow)	 ]]		
+				aucfpanel1:HookScript("OnShow", firtab_OnShow)	 ]]
 			aucfpanel2 = AuctionHouseFrameItemSellList
 				aucfpanel2:HookScript("OnUpdate", secftab_OnShow)
 			--aucfpanel2:HookScript("OnShow", secftab_OnShow)
@@ -446,22 +453,22 @@ local function LoadSkin()
 
 
 				function fcng4_OnShow(self)
-				if AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate4 ~= nil then 
+				if AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate4 ~= nil then
 					AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate4:SetScript("OnUpdate", function()
 										S:HandleButton(AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate4)
 																	end)
 				end
-				if AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3 ~= nil then 
+				if AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3 ~= nil then
 					AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3:SetScript("OnUpdate", function()
 										S:HandleButton(AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate3)
 																	end)
 				end
-				if AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate2 ~= nil then 
+				if AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate2 ~= nil then
 					AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate2:SetScript("OnUpdate", function()
 										S:HandleButton(AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate2)
 																	end)
 						end
-				if AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1 ~= nil then 
+				if AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1 ~= nil then
 					AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1:SetScript("OnUpdate", function()
 										S:HandleButton(AuctionHouseFrameBrowseResultsFrameItemListHeaderContainerPoolFrameAuctionHouseTableHeaderStringTemplate1)
 																	end)
@@ -470,6 +477,31 @@ local function LoadSkin()
 
 	hooksecurefunc(AuctionHouseTableBuilderMixin,"AddUnsortableColumnInternal", fcng4_OnShow)
 
+
+	AuctionHouseFrameBuyDialogDialogOverlay:HookScript("OnShow", function()
+		AuctionHouseFrameBuyDialogDialogOverlay:StripTextures()
+		AuctionHouseFrameBuyDialogDialogOverlay:CreateBackdrop("Transparent")
+		S:HandleButton(AuctionHouseFrameBuyDialogBuyNowButton)
+		S:HandleButton(AuctionHouseFrameBuyDialogCancelButton)
+	end)
+	S:HandleEditBox(AuctionHouseFrameSearchBarFilterButtonLevelRangeFrameMinLevel)
+	S:HandleEditBox(AuctionHouseFrameSearchBarFilterButtonLevelRangeFrameMaxLevel)
+
+
+
+	for i = 1,24 do
+		local chbt = _G["DropDownList1Button"..i.."Check"]
+		local uchbt = _G["DropDownList1Button"..i.."UnCheck"]
+		if chbt then
+			chbt:StripTextures()
+			chbt:SetTexture("Interface\\AddOns\\ElvUI\\Media\\Textures\\Melli")
+			chbt:SetSize(13,13)
+			chbt:SetVertexColor(1, 0.82, 0, 0.8)
+		end
+		if uchbt then
+			uchbt:StripTextures()
+		end
+	end
 end
 
 S:AddCallback('AuctionHouse', LoadSkin)
