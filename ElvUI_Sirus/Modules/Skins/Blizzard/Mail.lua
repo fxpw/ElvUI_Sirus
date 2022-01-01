@@ -293,6 +293,10 @@ local function LoadSkin()
 	OpenMailMoneyButtonIconTexture:SetInside()
 
 	OpenMailMoneyButtonCount:SetDrawLayer("OVERLAY")
+	S:HandleCheckBox(SendMailSendMoneyButton)
+	SendMailSendMoneyButton:SetSize(20,20)
+	S:HandleCheckBox(SendMailCODButton)
+	SendMailCODButton:SetSize(20,20)
 end
 
 S:RemoveCallback("Skin_Mail")
