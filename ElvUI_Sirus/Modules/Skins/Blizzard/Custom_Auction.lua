@@ -152,9 +152,10 @@ local function LoadSkin()
 								AuctionHouseFrameItemSellFrameItemDisplay:StripTextures()
 								-- AuctionHouseFrameItemSellFrameItemDisplay:CreateBackdrop("Transparent")
 							--button
-								S:HandleButton(AuctionHouseFrameItemSellFrameItemDisplayItemButton)
-								-- S:HandleIcon(AuctionHouseFrameItemSellFrameItemDisplayItemButtonIcon)
-								-- S:HandleIcon(AuctionHouseFrameItemSellFrameItemDisplayItemButton.Icon)
+								-- S:HandleButton(AuctionHouseFrameItemSellFrameItemDisplayItemButton)
+								AuctionHouseFrameItemSellFrameItemDisplayItemButtonIconBorder:StripTextures()
+								AuctionHouseFrameItemSellFrameItemDisplayItemButtonEmptyBackground:StripTextures()
+								S:HandleIcon(AuctionHouseFrameItemSellFrameItemDisplayItemButton.Icon)
 					--2nd
 						AuctionHouseFrameCommoditiesSellFrameOverlay:StripTextures()
 						AuctionHouseFrameCommoditiesSellFrame:StripTextures()
