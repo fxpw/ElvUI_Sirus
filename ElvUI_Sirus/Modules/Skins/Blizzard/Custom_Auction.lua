@@ -479,7 +479,10 @@ local function LoadSkin()
 	hooksecurefunc(AuctionHouseTableBuilderMixin,"AddUnsortableColumnInternal", fcng4_OnShow)
 
 
-	AuctionHouseFrameBuyDialogDialogOverlay:HookScript("OnShow", function()
+	AuctionHouseFrameBuyDialog:HookScript("OnShow", function()
+		AuctionHouseFrameBuyDialog:StripTextures()
+		AuctionHouseFrameBuyDialog:CreateBackdrop("Transparent")
+		AuctionHouseFrameBuyDialogBorder:StripTextures()
 		AuctionHouseFrameBuyDialogDialogOverlay:StripTextures()
 		AuctionHouseFrameBuyDialogDialogOverlay:CreateBackdrop("Transparent")
 		S:HandleButton(AuctionHouseFrameBuyDialogBuyNowButton)
