@@ -45,6 +45,32 @@ local menuList = {
 		end
 	},
 	{
+		text = PLAYER_V_PLAYER,
+		notCheckable = 1,
+		func = TogglePVPUIFrame
+	},
+	{
+		text = LFG_TITLE,
+		notCheckable = 1,
+		func = function()
+			ToggleFrame(LFDParentFrame)
+		end
+	},
+	{
+		text = LOOKING_FOR_RAID,
+		notCheckable = 1,
+		func = function()
+			ToggleFrame(LFRParentFrame)
+		end
+	},
+	{
+		text = L["Collections"],
+		notCheckable = 1,
+		func = function()
+			ToggleFrame(CollectionsJournal)
+		end
+	},
+	{
 		text = L["Calendar"],
 		notCheckable = 1,
 		func = function()
@@ -65,26 +91,7 @@ local menuList = {
 		text = TIMEMANAGER_TITLE,
 		notCheckable = 1,
 		func = ToggleTimeManager
-	},
-	{
-		text = PLAYER_V_PLAYER,
-		notCheckable = 1,
-		func = TogglePVPUIFrame
-	},
-	{
-		text = LFG_TITLE,
-		notCheckable = 1,
-		func = function()
-			ToggleFrame(LFDParentFrame)
-		end
-	},
-	{
-		text = LOOKING_FOR_RAID,
-		notCheckable = 1,
-		func = function()
-			ToggleFrame(LFRParentFrame)
-		end
-	},
+	},	
 	{
 		text = MAINMENU_BUTTON,
 		notCheckable = 1,
