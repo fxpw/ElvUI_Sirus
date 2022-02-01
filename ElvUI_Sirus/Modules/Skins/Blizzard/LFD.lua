@@ -32,7 +32,7 @@ local function LoadSkin()
 		"PVPLadderFrameTab",
 		"RenegadeLadderFrameTab",
 	}
-	for i = 1,4 do 
+	for i = 1,4 do
 		for _,tab in pairs(tabstorem) do
 		tab = _G[tab..1]
 			if tab then
@@ -41,7 +41,7 @@ local function LoadSkin()
 			end
 		end
 	end
-	
+
 	-- LFDParentFrameTab1:ClearAllPoints()
 	-- LFDParentFrameTab1:SetPoint("BOTTOMLEFT", 2, -30)
 
@@ -263,6 +263,9 @@ local function LoadSkin()
 	PVPUIFrame:SetTemplate("Transparent")
 	PVPUIFrame.LeftInset:StripTextures()
 	PVPUIFrame.Shadows:StripTextures()
+	S:HandleCheckBox(PVPHonorFrameBottomInsetBonusBattlegroundRadioButton)
+	S:HandleCheckBox(PVPHonorFrameBottomInsetSpecificBattlegroundRadioButton)
+
 
 	for i = 1, PVPUIFrame:GetNumChildren() do
 		local child = select(i, PVPUIFrame:GetChildren())
