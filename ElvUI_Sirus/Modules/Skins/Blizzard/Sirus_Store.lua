@@ -176,11 +176,12 @@ local function LoadSkin()
 	StoreSpecialOfferTopFrame:StripTextures()
 	StoreSpecialOfferBanner:SetTemplate()
 	S:HandleButton(StoreSpecialOfferBanner.LeftPanel.BuyButton)
-
-	for _, frame in pairs(SpecialOfferCustomBanners) do
-		frame = _G[frame]
-		if frame and frame.BuyButton then
-			S:HandleButton(frame.BuyButton)
+	if SpecialOfferCustomBanners then
+		for _, frame in pairs(SpecialOfferCustomBanners) do
+			frame = _G[frame]
+			if frame and frame.BuyButton then
+				S:HandleButton(frame.BuyButton)
+			end
 		end
 	end
 
